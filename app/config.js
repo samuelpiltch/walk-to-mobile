@@ -1,3 +1,4 @@
 export default AccessCodes = {
-    mapbox: "you-mapbox.com-access-key",
+    mapbox: "your-mapbox.com-access-key",
+    mbstyle: "your-mapbox.com-style"
 };

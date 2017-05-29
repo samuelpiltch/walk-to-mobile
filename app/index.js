@@ -9,23 +9,29 @@ import AccessCodes from './config.js';
 Mapbox.setAccessToken(AccessCodes.mapbox);
 
 export default class WalkTo extends Component {
+
     render() {
         return (
-            <View style = {styles.container}>
+            <View style={styles.container}>
                 <MapView
-                    style = {styles.map}
+                    style={styles.map}
+                    styleURL={AccessCodes.mbstyle}
+                    logoIsHidden={true}
+
                     initialCenterCoordinate={{ latitude: 40.744683, longitude: -73.984853 }}
                     initialZoomLevel={14}
                     initialDirection={0}
                     rotateEnabled={true}
                     scrollEnabled={true}
                     zoomEnabled={true}
-                    showsUserLocation={false}
-                    styleURL={"your-mapbox.com-style"}
+
+                    showsUserLocation={true}
+                    userTrackingMode={Mapbox.userTrackingMode.follow}
                 />
             </View>
         );
     }
+
 }
 
 const styles = StyleSheet.create({
