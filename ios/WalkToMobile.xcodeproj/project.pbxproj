@@ -22,9 +22,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		2250801B1EDC6142002AF958 /* libRCTMapboxGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 225080181EDC6122002AF958 /* libRCTMapboxGL.a */; };
-		22526D521EDC625F00F00747 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22526D511EDC625F00F00747 /* Mapbox.framework */; };
-		22526D531EDC625F00F00747 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22526D511EDC625F00F00747 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2201E1931EDCB2370042167E /* libRCTMapboxGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201E1901EDCB1150042167E /* libRCTMapboxGL.a */; };
+		2289BD491EE0AB39009BA0EE /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2289BD481EE0AB39009BA0EE /* Mapbox.framework */; };
+		2289BD4A1EE0AB39009BA0EE /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2289BD481EE0AB39009BA0EE /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -105,16 +105,16 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
-		225080171EDC6122002AF958 /* PBXContainerItemProxy */ = {
+		2201E18F1EDCB1150042167E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 225080121EDC6121002AF958 /* RCTMapboxGL.xcodeproj */;
+			containerPortal = 2201E18A1EDCB1150042167E /* RCTMapboxGL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C5DBB3401AF2EF2B00E611A9;
 			remoteInfo = RCTMapboxGL;
 		};
-		225080191EDC6122002AF958 /* PBXContainerItemProxy */ = {
+		2201E1911EDCB1150042167E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 225080121EDC6121002AF958 /* RCTMapboxGL.xcodeproj */;
+			containerPortal = 2201E18A1EDCB1150042167E /* RCTMapboxGL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C5DBB34B1AF2EF2B00E611A9;
 			remoteInfo = RCTMapboxGLTests;
@@ -248,13 +248,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2250801E1EDC6169002AF958 /* Embed Frameworks */ = {
+		2289BD4B1EE0AB39009BA0EE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				22526D531EDC625F00F00747 /* Mapbox.framework in Embed Frameworks */,
+				2289BD4A1EE0AB39009BA0EE /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,8 +281,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WalkToMobile/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WalkToMobile/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		225080121EDC6121002AF958 /* RCTMapboxGL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTMapboxGL.xcodeproj; path = "../node_modules/react-native-mapbox-gl/ios/RCTMapboxGL.xcodeproj"; sourceTree = "<group>"; };
-		22526D511EDC625F00F00747 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		2201E18A1EDCB1150042167E /* RCTMapboxGL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTMapboxGL.xcodeproj; path = "../node_modules/react-native-mapbox-gl/ios/RCTMapboxGL.xcodeproj"; sourceTree = "<group>"; };
+		2289BD481EE0AB39009BA0EE /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* WalkToMobile-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WalkToMobile-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* WalkToMobile-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WalkToMobile-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
@@ -303,7 +303,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2250801B1EDC6142002AF958 /* libRCTMapboxGL.a in Frameworks */,
+				2201E1931EDCB2370042167E /* libRCTMapboxGL.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -314,7 +314,7 @@
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
-				22526D521EDC625F00F00747 /* Mapbox.framework in Frameworks */,
+				2289BD491EE0AB39009BA0EE /* Mapbox.framework in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,11 +450,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		225080131EDC6121002AF958 /* Products */ = {
+		2201E18B1EDCB1150042167E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				225080181EDC6122002AF958 /* libRCTMapboxGL.a */,
-				2250801A1EDC6122002AF958 /* RCTMapboxGLTests.xctest */,
+				2201E1901EDCB1150042167E /* libRCTMapboxGL.a */,
+				2201E1921EDCB1150042167E /* RCTMapboxGLTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -480,7 +480,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				225080121EDC6121002AF958 /* RCTMapboxGL.xcodeproj */,
+				2201E18A1EDCB1150042167E /* RCTMapboxGL.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -508,7 +508,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				22526D511EDC625F00F00747 /* Mapbox.framework */,
+				2289BD481EE0AB39009BA0EE /* Mapbox.framework */,
 				13B07FAE1A68108700A75B9A /* WalkToMobile */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WalkToMobileTests */,
@@ -559,7 +559,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				22C440861EDC5F9B000CD95F /* ShellScript */,
-				2250801E1EDC6169002AF958 /* Embed Frameworks */,
+				2289BD4B1EE0AB39009BA0EE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -666,8 +666,8 @@
 					ProjectRef = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
 				},
 				{
-					ProductGroup = 225080131EDC6121002AF958 /* Products */;
-					ProjectRef = 225080121EDC6121002AF958 /* RCTMapboxGL.xcodeproj */;
+					ProductGroup = 2201E18B1EDCB1150042167E /* Products */;
+					ProjectRef = 2201E18A1EDCB1150042167E /* RCTMapboxGL.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
@@ -761,18 +761,18 @@
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		225080181EDC6122002AF958 /* libRCTMapboxGL.a */ = {
+		2201E1901EDCB1150042167E /* libRCTMapboxGL.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRCTMapboxGL.a;
-			remoteRef = 225080171EDC6122002AF958 /* PBXContainerItemProxy */;
+			remoteRef = 2201E18F1EDCB1150042167E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2250801A1EDC6122002AF958 /* RCTMapboxGLTests.xctest */ = {
+		2201E1921EDCB1150042167E /* RCTMapboxGLTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = RCTMapboxGLTests.xctest;
-			remoteRef = 225080191EDC6122002AF958 /* PBXContainerItemProxy */;
+			remoteRef = 2201E1911EDCB1150042167E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
@@ -947,16 +947,16 @@
 		};
 		22C440861EDC5F9B000CD95F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = " bash \"/Users/Sam/Github/walk-to-mobile/ios/Mapbox.framework/strip-frameworks.sh\"";
+			shellScript = " bash \"/Users/sam/GitHub/walk-to-mobile/ios/Mapbox.framework/strip-frameworks.sh\"";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1086,7 +1086,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WalkToMobile/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1110,7 +1110,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WalkToMobile/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1288,6 +1288,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
