@@ -25,6 +25,22 @@ export default class WalkTo extends Component {
         this.loadTrains = this.loadTrains.bind(this);
     }
 
+    map_range(value, low1, high1, low2, high2) {
+        return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+    }
+
+    calcSize(arrival) {
+        date = new Date();
+        var timeleft = (arrival * 1000) - date.getTime();
+        if (timeleft > 0) {
+            // Convert timeleft to a range between 0 to 500, useable as size of Walkable Radius.
+            var size = this.map_range(timeleft, 0, 3000000, 0, 500) / 2;
+            return size;
+        } else {
+            return 0;
+        }
+    }
+
     // Load and display incoming trains
     loadTrains() {
         var rawTrains = [];
@@ -132,7 +148,8 @@ export default class WalkTo extends Component {
                                 id: stop + train.toString(),
                                 color: stopColor,
                                 lat: lat,
-                                long: long
+                                long: long,
+                                size: that.calcSize(train)
                             }
                         );
                     }
@@ -147,7 +164,7 @@ export default class WalkTo extends Component {
                     color={trainInfo.color}
                     lat={trainInfo.lat}
                     long={trainInfo.long}
-                    size={75}
+                    size={trainInfo.size}
                 />
             ))
             // Set array of Radius annotation to state, then placed as child of MapView.
@@ -265,6 +282,9 @@ export default class WalkTo extends Component {
             />
         ))
 
+        // Update and load trains every 2 seconds.
+        debounce(this.loadTrains(), 2000);
+
         return (
             <View style={styles.container}>
                 <MapView
@@ -278,11 +298,10 @@ export default class WalkTo extends Component {
                     initialDirection={0}
                     rotateEnabled={true}
                     scrollEnabled={true}
-                    zoomEnabled={true}
+                    zoomEnabled={false}
 
                     showsUserLocation={true}
                     userTrackingMode={Mapbox.userTrackingMode.follow}
-                    onRegionDidChange={ () => {debounce(this.loadTrains(), 2000)} }
                 >
                     {stopListArr}
                     {this.state.trainListArr}
